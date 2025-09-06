@@ -26,6 +26,8 @@ app.use(cors({
     }
 }))
 
+app.get('/', (req,res) => res.send('Welcome to Excribo'))
+
 app.use('/api', api)
 
 export default app;
